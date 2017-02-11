@@ -62,9 +62,10 @@ cat <<__endofhtml__ > ${PETITION}.html
 <script type="text/javascript" src="${PETITION}.json"></script>
 </head>
 <body>
-<h2>Data for <a href="https://petition.parliament.uk/petitions/${PETITION}">Petition ${PETITION}</a></h2>
-<div id="m2" style="width: 1000px; height: 400px;"></div>
-<div id="dm2" style="width: 1000px; height: 400px;"></div>
+<div>Data for <a href="https://petition.parliament.uk/petitions/${PETITION}">Petition ${PETITION}</a>
+Collected using the <a href="https://github.com/robpumphrey/petition-counter">petition-counter</a></div>
+<div id="m2" style="width: 95%; height: 400px;"></div>
+<div id="dm2" style="width: 95%; height: 400px;"></div>
 <script>
 function toDateTime(secs) {
     var t = new Date(1970, 0, 1); // Epoch
